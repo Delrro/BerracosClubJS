@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/estilos.css">
+  <title>Berracos Club - Comprar</title>
+</head>
+<body>
+
+  <div>
+    <img src="./imagenes/brcslogo.png" alt="logo" class="logo">
+  </div>
+
+  <h1 class="claseProductos">Productos!!!</h1>
+
+  <div class="grid-container">
+    <div class="product-item">
+      <img src="./imagenes/billeteandcars.jpg" alt="Billeteandcars">
+      <button class="add-to-cart-btn" data-name="Remera: Billlete and Cars (Aclarar luego el talle)" data-price="4500">Agregar al carrito (C/U $4500)</button>
+      <button class="add-to-cart-btn2" data-name="Remera: Billlete and Cars (Aclarar luego el talle)" data-price="10">Agregar al carrito (C/U US$ 10)</button>
+    </div>
+    <div class="product-item">
+      <img src="./imagenes/blessedblanca.jpg" alt="blessedBlanca">
+      <button class="add-to-cart-btn" data-name="Remera: Blessed Blanca (Aclarar luego el talle)" data-price="4000">Agregar al carrito (C/U $4000)</button>
+      <button class="add-to-cart-btn2" data-name="Remera: Blessed Blanca (Aclarar luego el talle)" data-price="9">Agregar al carrito (C/U US$ 9)</button>
+    </div>
+    <div class="product-item">
+      <img src="./imagenes/Blessednegra.jpg" alt="blessedNegra">
+      <button class="add-to-cart-btn" data-name="Remera: Blessed Negra (Aclarar luego el talle)" data-price="4200">Agregar al carrito (C/U $4200)</button>
+      <button class="add-to-cart-btn2" data-name="Remera: Blessed Negra (Aclarar luego el talle)" data-price="9,2">Agregar al carrito (C/U US$ 9,2)</button>
+    </div>
+    <div class="product-item">
+      <img src="./imagenes/brcscrema.JPEG" alt="blessedCrema">
+      <button class="add-to-cart-btn" data-name="Remera: Blessed Crema (Aclarar luego el talle)" data-price="5000">Agregar al carrito (C/U $5000)</button>
+      <button class="add-to-cart-btn2" data-name="Remera: Blessed Crema (Aclarar luego el talle)" data-price="12">Agregar al carrito (C/U US$ 12)</button>
+    </div>
+    <div class="product-item">
+      <img src="./imagenes/brcsmarron.JPEG" alt="brcsMarron">
+      <button class="add-to-cart-btn" data-name="Remera: Berracos Club Marron (Aclarar luego el talle)" data-price="5000">Agregar al carrito (C/U $5000)</button>
+      <button class="add-to-cart-btn2" data-name="Remera: Berracos Club Marron (Aclarar luego el talle)" data-price="12">Agregar al carrito (US$ 12)</button>
+    </div>
+    <div class="product-item">
+      <img src="./imagenes/girasolmarron.JPEG" alt="girasolMarron">
+      <button class="add-to-cart-btn" data-name="Remera: Girasol Marron (Aclarar luego el talle)" data-price="4700">Agregar al carrito (C/U $4700)</button>
+      <button class="add-to-cart-btn2" data-name="Remera: Girasol Marron (Aclarar luego el talle)" data-price="10,5">Agregar al carrito (C/U US$ 10,5)</button>
+    </div>
+    <div class="product-item">
+      <img src="./imagenes/Lookmonblanca.jpg" alt="lookmonBlanca">
+      <button class="add-to-cart-btn" data-name="Remera: Look Mon Blanca (Aclarar luego el talle)" data-price="4500">Agregar al carrito (C/U $4500)</button>
+      <button class="add-to-cart-btn2" data-name="Remera: Look Mon Blanca (Aclarar luego el talle)" data-price="10">Agregar al carrito (C/U US$ 10)</button>
+    </div>
+    <div class="product-item">
+      <img src="./imagenes/Lookmonnegra.jpg" alt="lookmonNegra">
+      <button class="add-to-cart-btn" data-name="Remera: Look Mon Negra (Aclarar luego el talle)" data-price="4500">Agregar al carrito (C/U $4500)</button>
+      <button class="add-to-cart-btn2" data-name="Remera: Look Mon Negra (Aclarar luego el talle)" data-price="10">Agregar al carrito (C/U US$ 10)</button>
+    </div>
+    <div class="product-item">
+      <img src="./imagenes/loveis.JPEG" alt="loveIs">
+      <button class="add-to-cart-btn" data-name="Remera: Love is..(Aclarar luego el talle)" data-price="4700">Agregar al carrito (C/U $4700)</button>
+    </div>
+    <button class="add-to-cart-btn2" data-name="Remera: Love is..(Aclarar luego el talle)" data-price="10,5">Agregar al carrito (C/U US$ 10,5)</button>
+    </div>
+    
+  </div>
+  <div class="carritoDecompras">
+    <h2>Verifica tu carrito de compra!!!</h2>
+    <img src="./imagenes/icocarrito.png" alt="fotocarrito" class="fotocarrito">
+  </div>
+
+
+  <div class="carritoContenedor">
+    <h2>Carrito de Compras en Pesos</h2>
+    <ul class="cart-items"></ul>
+    <p>Total: $<span id="total-value">0</span></p>
+    <button id="clear-cart-btn">Vaciar Carrito</button>     
+    <button id="btnComprar">Comprar</button>
+  </div>
+
+  <div class="carritoContenedor">
+    <h2>Carrito de Compras en Dolares</h2>
+    <ul class="cart-items2"></ul>
+    <p>Total: $<span id="total-value2">0</span></p>
+    <button id="clear-cart-btn2">Vaciar Carrito</button>     
+    <button id="btnComprar2">Comprar</button>
+  </div> 
+
+
+  <footer class="pie">
+    <p>Copyright &copy; 2021-2023 ,Berraco's Club™ todos los derechos reservados.</p>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="app.js"></script>
+  <script src="appusd.js"></script>
+</body>
+</html>
